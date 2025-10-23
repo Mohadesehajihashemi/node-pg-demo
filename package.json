@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "api": "node api.js"
+    "api": "node api.js",
+    "seed": "docker exec -i postgres psql -U postgres -d pgdb -f /dev/stdin < seed.sql"
   },
   "keywords": [],
   "author": "",
